@@ -1,0 +1,14 @@
+name: 'Say hello'
+description: 'Greeting from Docker python.'
+inputs:
+  name:
+    required: false
+    type: string
+    default: Stranger
+    description: "The name to be used in the greeting"
+outputs:
+  greeting:
+    description: We say hi by your name
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
